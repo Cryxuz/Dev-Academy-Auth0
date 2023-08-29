@@ -15,7 +15,7 @@ const useIsAuthenticated = () => {
 export function IfAuthenticated(props: Props) {
   const { children } = props
   return useIsAuthenticated() ? <>{children}</> : null
-}
+} //the children variable is linked to NavGroup in Nav.tsx, if it it true it will return the the children,
 
 export function IfNotAuthenticated(props: Props) {
   const { children } = props
