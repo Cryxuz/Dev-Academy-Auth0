@@ -8,7 +8,7 @@ import jwks from 'jwks-rsa'
 const domain = 'https://mako-paul-t.au.auth0.com'
 const audience = 'https://fruits/api'
 
-const checkJwt = jwt({
+export const checkJwt = jwt({
   secret: jwks.expressJwtSecret({
     cache: true,
     rateLimit: true,
